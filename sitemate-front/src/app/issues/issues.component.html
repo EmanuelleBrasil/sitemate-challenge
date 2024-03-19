@@ -1,1 +1,7 @@
 <p>issues works!</p>
+<input id="name" [(ngModel)]="id" placeholder="name" />
+<button (click)="getIssue(id)">get issue</button>
+<div *ngIf="issue">
+  <h2>{{ issue.title }}</h2>
+  <p>{{ issue.description }}</p>
+</div>
